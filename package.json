@@ -6,6 +6,7 @@
   "scripts": {
     "build": "gulp",
     "dev": "gulp watch",
+    "images": "gulp images",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

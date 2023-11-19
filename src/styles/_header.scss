@@ -20,6 +20,7 @@
 
   .btn {
     height: 50px;
+    opacity: 1;
 
     &--primary {
       background-color: rgba($color: variaveis.$CorDeFundo, $alpha: 0.7);
@@ -30,5 +31,9 @@
         transform: scale(1.05);
       }
     }
+  }
+
+  &--is-hidden {
+    display: none;
   }
 }

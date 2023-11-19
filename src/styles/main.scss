@@ -1,6 +1,9 @@
 @use "header";
 @use "variaveis";
 @use "hero";
+@use "description";
+@use "characters";
+@use "watch";
 
 @font-face {
   font-family: Avenir;
@@ -17,12 +20,12 @@
 @mixin text($fontSize: 16px) {
   font-size: $fontSize;
   line-height: $fontSize + 10px;
-  color: variaveis.$CorTextoPrincipal;
+  color: variaveis.$CorTextoSecundario;
 }
 
 @mixin title($fontSize: 40px) {
   @include text($fontSize);
-  color: variaveis.$CorTextoSecundario;
+  color: variaveis.$CorTextoPrincipal;
 }
 
 * {
@@ -41,7 +44,7 @@
   width: 100%;
   height: 60px;
   font-size: 18px;
-  color: variaveis.$CorTextoSecundario;
+  color: variaveis.$CorTextoPrincipal;
   background-color: variaveis.$CorDeFundoBotaoPrimario;
   text-transform: uppercase;
   border-radius: 4px;

@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const btn_character = document.querySelectorAll("[data-character-active]");
   const header = document.querySelector("header");
   const hero = document.querySelector(".hero");
+
   const heroheight = hero.clientHeight - 100;
 
   window.addEventListener("scroll", () => {
@@ -42,10 +43,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function hideHeader() {
-    header.classList.add("header--is-hidden");
+    header.classList.remove("header--is-visible");
   }
 
   function showHeader() {
-    header.classList.remove("header--is-hidden");
+    header.classList.add("header--is-visible");
   }
 });

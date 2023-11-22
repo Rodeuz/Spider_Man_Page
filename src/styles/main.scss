@@ -53,7 +53,7 @@
   letter-spacing: 1px;
   border: 1px solid variaveis.$CorDeFundo;
   &:hover {
-    background-color: lighten(variaveis.$CorDeFundoBotaoPrimario, 3%);
+    background-color: lighten(variaveis.$CorDeFundoBotaoPrimario, 2%);
   }
 
   &--transparente {

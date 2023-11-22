@@ -1,7 +1,7 @@
 @use "variaveis";
 
 .hero {
-  padding: 5.6vw 0;
+  padding: 5.6vw;
   background: linear-gradient(202deg, rgba(212, 75, 61, 1) 0%, rgba(13, 3, 52, 1) 50%);
 
   &__container {
@@ -38,6 +38,7 @@
     margin-top: 3vw;
     // width: 500px;
     padding: 6px 4em;
+    border-radius: 16px;
     text-wrap: nowrap;
 
     // text-decoration: ;

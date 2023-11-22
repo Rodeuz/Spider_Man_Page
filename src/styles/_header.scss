@@ -1,12 +1,13 @@
 @use "variaveis";
 
 .header {
-  position: sticky;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: variaveis.$CorDeFundo;
-  transition: background-color 0.5s ease;
+  // position: sticky;
+  // z-index: 1;
+  // top: 0;
+  // left: 0;
+  // background-color: variaveis.$CorDeFundo;
+  display: none;
+
   &__container {
     padding: 8px 36px;
     display: flex;
@@ -33,7 +34,12 @@
     }
   }
 
-  &--is-hidden {
-    display: none;
+  &--is-visible {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: variaveis.$CorDeFundo;
+    display: block;
   }
 }

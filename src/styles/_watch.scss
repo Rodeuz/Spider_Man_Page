@@ -1,0 +1,87 @@
+@use "variaveis";
+
+.watch {
+  padding: 5.6vw;
+  text-align: center;
+
+  // padding: 5.6vw;
+
+  .title {
+    margin-top: 1.5em;
+  }
+
+  &__cards {
+    padding: 1.5em 2em 0 2em;
+
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__items {
+      // width: 450px;
+
+      // height: 500px;
+      background: linear-gradient(0deg, rgba(23, 12, 71, 0) 0%, rgba(23, 12, 71, 1) 87%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4em 2em;
+      flex-direction: column;
+      border-radius: 1.5em;
+      position: relative;
+
+      &:nth-child(2) {
+        border: 3px solid rgba(95, 4, 107, 0.8);
+
+        .text__best_price {
+          position: absolute;
+          left: 0;
+          top: 0;
+          padding: 5px;
+          // background: linear-gradient(130deg, rgb(29, 19, 73) 0%, rgba(95, 4, 107, 0.6) 50%, rgb(29, 19, 73) 100%);
+          background: rgba(95, 4, 107, 0.8);
+          border-radius: 16px 0px;
+        }
+      }
+
+      img {
+        width: 50%;
+        // height: 30%;
+      }
+
+      &__btn {
+        width: 270px;
+        height: 60px;
+        background-color: variaveis.$CorDeFundoBotaoPrimario;
+        border: none;
+        color: white;
+        font-size: 2em;
+        font-weight: 700;
+        border-radius: 16px;
+        margin-top: 32px;
+        // padding: 0.3em 3em;
+
+        &:hover {
+          background-color: lighten($color: variaveis.$CorDeFundoBotaoPrimario, $amount: 2%);
+        }
+      }
+
+      .plan {
+        margin-top: 1em;
+      }
+
+      .prices {
+        margin: 12px 0;
+      }
+    }
+  }
+
+  .items__values {
+    height: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+}

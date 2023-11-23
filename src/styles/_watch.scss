@@ -33,15 +33,29 @@
       position: relative;
 
       &:nth-child(2) {
+        // border-top: 3px solid rgba(95, 4, 107, 0.8);
         border: 3px solid rgba(95, 4, 107, 0.8);
+        border: 3px solid rgba(127, 6, 143, 0.8);
+        // border: 3px solid rgba(62, 30, 190, 0.7);
+        // border: 3px solid variaveis.$CorDeFundoBotaoPrimario;
+        // border-bottom: none;
+
+        // border: 3px solid rgba(93, 29, 153, 0.8);
 
         .text__best_price {
           position: absolute;
           left: 0;
           top: 0;
           padding: 5px;
-          // background: linear-gradient(130deg, rgb(29, 19, 73) 0%, rgba(95, 4, 107, 0.6) 50%, rgb(29, 19, 73) 100%);
-          background: rgba(95, 4, 107, 0.8);
+          // background: linear-gradient(130deg, rgba(95, 4, 107, 0.6) 0%, rgb(35, 22, 97) 50%, rgba(95, 4, 107, 0.6) 100%, rgb(29, 19, 73) 100%);
+
+          // background: rgba(95, 4, 107, 0.8);
+          background: rgba(127, 6, 143, 0.8);
+          // background: rgba(62, 30, 190, 0.7);
+          // background: rgba(62, 30, 190, 0.7);
+
+          // background: rgba(93, 29, 153, 0.8);
+
           border-radius: 16px 0px;
         }
       }
@@ -54,7 +68,10 @@
       &__btn {
         width: 270px;
         height: 60px;
-        background-color: variaveis.$CorDeFundoBotaoPrimario;
+        // background-color: variaveis.$CorDeFundoBotaoPrimario;
+        background: rgb(137, 18, 184);
+        // background: rgba(62, 30, 190, 0.7);
+
         border: none;
         color: white;
         font-size: 2em;
@@ -64,7 +81,9 @@
         // padding: 0.3em 3em;
 
         &:hover {
-          background-color: lighten($color: variaveis.$CorDeFundoBotaoPrimario, $amount: 2%);
+          // background-color: lighten($color: variaveis.$CorDeFundoBotaoPrimario, $amount: 2%);
+          // background-color: lighten($color: rgba(62, 30, 190, 0.7), $amount: 5%);
+          background-color: lighten($color: rgb(137, 18, 184), $amount: 5%);
         }
       }
 

@@ -19,18 +19,20 @@
     width: 150px;
   }
 
-  .btn {
+  .button {
     height: 50px;
     opacity: 1;
 
-    &--primary {
-      background-color: rgba($color: variaveis.$CorDeFundo, $alpha: 0.7);
+    // &--primary {
+    //   background-color: rgba($color: variaveis.$CorDeFundo, $alpha: 0.7);
 
-      border: 1px solid variaveis.$CorDeFundoBotaoPrimario;
-      &:hover {
-        background-color: variaveis.$CorDeFundoBotaoPrimario;
-        transform: scale(1.05);
-      }
+    //   border: 1px solid variaveis.$CorDeFundoBotaoPrimario;
+
+    // }
+
+    &:hover {
+      // background-color: variaveis.$CorDeFundoBotaoPrimario;
+      transform: scale(1.05);
     }
   }
 

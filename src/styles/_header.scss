@@ -6,6 +6,7 @@
   // top: 0;
   // left: 0;
   // background-color: variaveis.$CorDeFundo;
+  // visibility: collapse;
   display: none;
 
   &__container {
@@ -22,6 +23,11 @@
   .button {
     height: 50px;
     opacity: 1;
+
+    @media (max-width: 1279px) {
+      padding: 1px 5px;
+      font-size: 16px;
+    }
 
     // &--primary {
     //   background-color: rgba($color: variaveis.$CorDeFundo, $alpha: 0.7);
@@ -43,5 +49,6 @@
     left: 0;
     background-color: variaveis.$CorDeFundo;
     display: block;
+    // visibility: visible;
   }
 }
